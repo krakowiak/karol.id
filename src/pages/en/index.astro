@@ -1,0 +1,112 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import Link from "../../components/Link.astro";
+import Section from "../../components/Section.astro";
+import "../../styles/fonts.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Karol Krakowiak</title>
+		<script
+			src="https://kit.fontawesome.com/5e31d3fb3d.js"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.usefathom.com/script.js"
+			data-site="GRANSNPE"
+			defer></script>
+	</head>
+	<body
+		class="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-white tracking-tight"
+	>
+		<main class="max-w-xl mx-auto px-4 py-10 grid grid-cols-1 gap-10">
+			<header class="space-y-4">
+				<figure>
+					<Picture
+						src="/images/karol.jpg"
+						widths={[256]}
+						aspectRatio={1}
+						format="webp"
+						class="rounded-full mx-auto w-32 h-32 shadow-md shadow-slate-200 dark:shadow-slate-700"
+						alt="Karol Krakowiak"
+						loading="eager"
+						width={128}
+						height={128}
+					/>
+				</figure>
+				<div class="font-heading text-center">
+					<h1 class="text-3xl lg:text-5xl font-extrabold">
+						Karol Krakowiak
+					</h1>
+					<p
+						class="text-lg lg:text-xl text-slate-500 dark:text-slate-300"
+					>
+						Product Designer &bull; Full–stack Developer
+					</p>
+				</div>
+			</header>
+
+			<Section title="Follow me!">
+				<Link
+					href="https://twitter.com/iamkrakowiak"
+					icon="fa-brands fa-twitter"
+					title="Twitter"
+				>
+					twitter.com/iamkrakowiak
+				</Link>
+				<Link
+					href="https://instagram.com/iamkrakowiak"
+					icon="fa-brands fa-instagram"
+					title="Instagram"
+				>
+					instagram.com/iamkrakowiak
+				</Link>
+				<Link
+					href="https://dribbble.com/krakowiak"
+					icon="fa-brands fa-dribbble"
+					title="Dribbble"
+				>
+					dribbble.com/krakowiak
+				</Link>
+				<Link
+					href="https://github.com/krakowiak"
+					icon="fa-brands fa-github"
+					title="GitHub"
+				>
+					github.com/krakowiak
+				</Link>
+				<Link
+					href="https://letterboxd.com/karol"
+					icon="fa-kit fa-letterboxd"
+					title="Letterboxd"
+				>
+					letterboxd.com/karol
+				</Link>
+			</Section>
+			<Section title="Say „hi”">
+				<Link
+					href="mailto:karol@krakowiak.me"
+					icon="fa-regular fa-envelope"
+					title="Send me an e–mail"
+				>
+					karol@krakowiak.me
+				</Link>
+			</Section>
+			<footer class="text-center">
+				<a
+					href="https://karolkrakowiak.pl/?ref=karol.id"
+					target="_blank"
+					class="text-sm text-slate-900 dark:text-white hover:text-brand transition-colors"
+				>
+					<i
+						class="fa-kit fa-karolkrakowiak fa-xl"
+						title="Karol Krakowiak"></i>
+				</a>
+			</footer>
+		</main>
+	</body>
+</html>

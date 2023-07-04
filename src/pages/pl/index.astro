@@ -1,0 +1,168 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import Link from "../../components/Link.astro";
+import Section from "../../components/Section.astro";
+import "../../styles/fonts.css";
+import "../../styles/general.css";
+---
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Karol Krakowiak</title>
+        <script
+            src="https://kit.fontawesome.com/5e31d3fb3d.js"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.usefathom.com/script.js"
+            data-site="GRANSNPE"
+            defer></script>
+    </head>
+    <body
+        class="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-white tracking-tight"
+    >
+        <main class="max-w-xl mx-auto px-4 py-10 grid grid-cols-1 gap-10">
+            <header class="space-y-4">
+                <figure>
+                    <Picture
+                        src="/images/karol.jpg"
+                        widths={[256]}
+                        aspectRatio={1}
+                        format="webp"
+                        class="rounded-full mx-auto w-32 h-32 shadow-md shadow-slate-200 dark:shadow-slate-700"
+                        alt="Karol Krakowiak"
+                        loading="eager"
+                        width={128}
+                        height={128}
+                    />
+                </figure>
+                <div class="font-heading text-center">
+                    <h1 class="text-3xl lg:text-5xl font-extrabold">
+                        Karol Krakowiak
+                    </h1>
+                    <p
+                        class="text-lg lg:text-xl text-slate-500 dark:text-slate-300"
+                    >
+                        Product Designer &bull; Full–stack Developer
+                    </p>
+                </div>
+            </header>
+
+            <Section title="Obserwuj mnie!">
+                <Link
+                    href="https://twitter.com/iamkrakowiak"
+                    icon="fa-brands fa-twitter"
+                    title="Twitter"
+                >
+                    twitter.com/iamkrakowiak
+                </Link>
+                <Link
+                    href="https://instagram.com/iamkrakowiak"
+                    icon="fa-brands fa-instagram"
+                    title="Instagram"
+                >
+                    instagram.com/iamkrakowiak
+                </Link>
+                <Link
+                    href="https://github.com/krakowiak"
+                    icon="fa-brands fa-github"
+                    title="GitHub"
+                >
+                    github.com/krakowiak
+                </Link>
+                <Link
+                    href="https://www.filmweb.pl/user/kjkrakowiak"
+                    icon="fa-kit fa-filmweb"
+                    title="Filmweb"
+                >
+                    filmweb.pl/user/kjkrakowiak
+                </Link>
+            </Section>
+            <Section title="Skontaktuj się">
+                <Link
+                    href="mailto:karol@krakowiak.me"
+                    icon="fa-regular fa-envelope"
+                    title="Send me an e–mail"
+                >
+                    karol@krakowiak.me
+                </Link>
+            </Section>
+
+            <Section title="Ładniejszy Internet">
+                <p class="text-lg">
+                    Zapisz się na mój newsletter o product designie i
+                    developmencie (Laravel, front-end)!
+                </p>
+                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+                <form
+                    action="https://app.convertkit.com/forms/5332920/subscriptions"
+                    class="seva-form formkit-form mt-2"
+                    method="post"
+                    data-sv-form="5332920"
+                    data-uid="bb8d985ae6"
+                    data-format="inline"
+                    data-version="5"
+                    data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Super! Udało się zapisać do newslettera. Został jeszcze jeden krok – potwierdzenie maila.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+                    min-width="400 500 600 700 800"
+                >
+                    <div data-style="clean">
+                        <ul
+                            class="formkit-alert formkit-alert-error"
+                            data-element="errors"
+                            data-group="alert"
+                        >
+                        </ul>
+                        <div
+                            data-element="fields"
+                            data-stacked="false"
+                            class="seva-fields formkit-fields flex flex-col sm:flex-row items-center gap-2"
+                        >
+                            <div class="formkit-field w-full sm:flex-1">
+                                <input
+                                    class="formkit-input w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 py-2 px-4 rounded-md focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 dark:focus:border-slate-400 dark:focus:ring-white/20"
+                                    name="email_address"
+                                    aria-label="Adres e–mail"
+                                    placeholder="Adres e–mail"
+                                    required=""
+                                    type="email"
+                                />
+                            </div>
+                            <button
+                                data-element="submit"
+                                class="formkit-submit formkit-submit w-full sm:w-auto bg-brand hover:bg-slate-900 transition-colors text-white font-medium px-5 py-2 rounded-md shadow-md"
+                            >
+                                <div class="formkit-spinner">
+                                    <div></div><div></div><div></div>
+                                </div>
+                                <span class="">Zapisz się</span>
+                            </button>
+                        </div>
+                        <div
+                            class="formkit-powered-by-convertkit-container text-xs mt-3 leading-snug text-slate-500 dark:text-slate-400"
+                        >
+                            Dbam o Twoją prywatność, adres e–mail, który
+                            podajesz jest użyty jedynie do wysyłki newslettera.
+                            Newsletter stworzony w <i
+                                class="fa-kit fa-convertkit text-[#FB6068]"></i>
+                            ConvertKit.
+                        </div>
+                    </div>
+                </form>
+            </Section>
+            <footer class="text-center">
+                <a
+                    href="https://karolkrakowiak.pl/?ref=karol.id"
+                    target="_blank"
+                    class="text-sm text-slate-900 dark:text-white hover:text-brand transition-colors"
+                >
+                    <i
+                        class="fa-kit fa-karolkrakowiak fa-xl"
+                        title="Karol Krakowiak"></i>
+                </a>
+            </footer>
+        </main>
+    </body>
+</html>
