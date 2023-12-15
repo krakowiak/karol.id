@@ -1,5 +1,6 @@
 ---
-import {Picture} from "astro:assets";
+import {Image} from "astro:assets";
+import ProfileImage from '../images/karol.jpg';
 import "../styles/fonts.css";
 import "../styles/general.css";
 const {lang} = Astro.props;
@@ -33,9 +34,7 @@ const {lang} = Astro.props;
 <main class="max-w-xl mx-auto px-4 py-10 grid grid-cols-1 gap-10">
     <header class="space-y-4">
         <figure>
-            <Picture src="/images/karol.jpg" widths={[256]} aspectRatio={1} format="webp"
-                     class="rounded-full mx-auto w-32 h-32 shadow-md shadow-slate-200 dark:shadow-slate-700"
-                     alt="Karol Krakowiak" loading="eager" width={128} height={128}/>
+            <Image src={ProfileImage} alt="Karol Krakowiak" width={128} height={128} densities={[2, 3]} class="rounded-full mx-auto w-32 h-32 shadow-md shadow-slate-200 dark:shadow-slate-700"/>
         </figure>
         <div class="font-heading text-center">
             <h1 class="text-3xl lg:text-5xl font-extrabold">Karol Krakowiak</h1>
