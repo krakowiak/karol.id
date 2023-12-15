@@ -2,16 +2,10 @@
 const {icon, ...props} = Astro.props;
 ---
 
-<a
-    {...props}
-    target="_blank"
-    class="bg-slate-200 dark:bg-slate-800 hover:bg-brand hover:text-white rounded-xl px-4 py-2.5 sm:text-lg flex items-center justify-center transition-all underline underline-offset-2 text-slate-800 dark:text-slate-50 decoration-slate-300 dark:decoration-slate-600 hover:decoration-brand hover:decoration-white/50"
->
+<a {...props} target="_blank"
+   class="bg-slate-200 dark:bg-slate-800 hover:bg-brand hover:text-white rounded-xl px-4 py-2.5 sm:text-lg flex items-center justify-center transition-all underline underline-offset-2 text-slate-800 dark:text-slate-50 decoration-slate-300 dark:decoration-slate-600 hover:decoration-white/50">
     <span class="mr-1 block">
-        <span
-                class={`${icon} fa-fw fa-lg`}
-                title={props.title}
-                aria-hidden="true"></span>
+        <span class={`${icon} fa-fw fa-lg`} title={props.title} aria-hidden="true"></span>
         <span class="sr-only">{props.title}</span>
     </span>
     <span class="text-ellipsis whitespace-nowrap overflow-hidden">

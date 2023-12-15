@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Satoshi-Variable', 'sans-serif'],
+				sans: ['Figtree', 'sans-serif'],
 				heading: ['CabinetGrotesk-Variable', 'sans-serif'],
 			},
 			colors: {

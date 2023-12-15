@@ -2,15 +2,13 @@
 const {title} = Astro.props;
 ---
 
-<section
-        class="grid grid-cols-1 gap-2"
->
+<section class="grid grid-cols-1 gap-2">
     {title &&
-            <header class="text-center">
-                <h2 class="font-heading text-xl font-medium">
-                    {title}
-                </h2>
-            </header>
+      <header class="text-center">
+          <h2 class="font-heading text-xl font-medium">
+              {title}
+          </h2>
+      </header>
     }
     <div class="grid grid-cols-1 gap-2">
         <slot/>

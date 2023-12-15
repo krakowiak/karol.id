@@ -1,138 +1,36 @@
 ---
-import {Picture} from "astro:assets";
+import Main from "../../layouts/Main.astro";
 import Link from "../../components/Link.astro";
 import Section from "../../components/Section.astro";
-import "../../styles/fonts.css";
-import "../../styles/general.css";
 ---
 
-<html lang="pl">
-<head>
-    <meta charset="utf-8"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-    <meta name="viewport" content="width=device-width"/>
-    <title>Karol Krakowiak</title>
-    <meta
-            name="description"
-            content="Karol Krakowiak – Product Designer & Full–stack Developer"
-    />
-    <meta property="og:url" content="https://karol.id"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Karol Krakowiak"/>
-    <meta
-            property="og:description"
-            content="Karol Krakowiak – Product Designer & Full–stack Developer"
-    />
-    <meta property="og:image" content="https://karol.id/images/preview.jpg"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:domain" content="karol.id"/>
-    <meta property="twitter:url" content="https://karol.id"/>
-    <meta name="twitter:title" content="Karol Krakowiak"/>
-    <meta
-            name="twitter:description"
-            content="Karol Krakowiak – Product Designer & Full–stack Developer"
-    />
-    <meta name="twitter:image" content="https://karol.id/images/preview.jpg"/>
-    <script
-            src="https://kit.fontawesome.com/5e31d3fb3d.js"
-            crossorigin="anonymous"></script>
-    <script
-            defer
-            type="text/javascript"
-            src="https://api.pirsch.io/pirsch-extended.js"
-            id="pirschextendedjs"
-            data-code="CvrEJEoyRIS1AbrakL300q15J6usWNo9"></script>
-</head>
-<body
-        class="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-white tracking-tight"
->
-<main class="max-w-xl mx-auto px-4 py-10 grid grid-cols-1 gap-10">
-    <header class="space-y-4">
-        <figure>
-            <Picture
-                    src="/images/karol.jpg"
-                    widths={[256]}
-                    aspectRatio={1}
-                    format="webp"
-                    class="rounded-full mx-auto w-32 h-32 shadow-md shadow-slate-200 dark:shadow-slate-700"
-                    alt="Karol Krakowiak"
-                    loading="eager"
-                    width={128}
-                    height={128}
-            />
-        </figure>
-        <div class="font-heading text-center">
-            <h1 class="text-3xl lg:text-5xl font-extrabold">Karol Krakowiak</h1>
-            <p class="text-lg lg:text-xl text-slate-700 dark:text-slate-300">
-                Product Designer &bull; Web Developer
-            </p>
-        </div>
-    </header>
-
+<Main lang="pl">
     <Section>
-        <Link
-                href="https://ladniejszyinternet.pl"
-                icon="fa-kit fa-ladniejszy-internet text-ladniejszyinternet"
-                title="Ładniejszy Internet"
-        >
+        <Link href="https://ladniejszyinternet.pl" icon="fa-kit fa-ladniejszy-internet text-ladniejszyinternet"
+              title="Ładniejszy Internet">
             Newsletter Ładniejszy Internet
         </Link>
-        <Link
-                href="https://karolkrakowiak.pl"
-                icon="fa-kit fa-karolkrakowiak"
-                title="Strona domowa – karolkrakowiak.pl"
-        >
+        <Link href="https://karolkrakowiak.pl" icon="fa-kit fa-karolkrakowiak"
+              title="Strona domowa – karolkrakowiak.pl">
             Strona domowa
         </Link>
     </Section>
 
     <Section>
-        <Link
-                href="https://twitter.com/iamkrakowiak"
-                icon="fa-brands fa-x-twitter"
-                title="X (wcześniej Twitter)"
-        >
+        <Link href="https://twitter.com/iamkrakowiak" icon="fa-brands fa-x-twitter" title="X (wcześniej Twitter)">
             X (wcześniej Twitter)
         </Link>
-        <Link
-                href="https://www.threads.net/@iamkrakowiak"
-                icon="fa-brands fa-threads"
-                title="Wątki"
-        >
+        <Link href="https://www.threads.net/@iamkrakowiak" icon="fa-brands fa-threads" title="Wątki">
             Wątki (Threads)
         </Link>
-        <Link
-                href="https://instagram.com/iamkrakowiak"
-                icon="fa-brands fa-instagram"
-                title="Instagram"
-        >
+        <Link href="https://instagram.com/iamkrakowiak" icon="fa-brands fa-instagram" title="Instagram">
             Instagram
         </Link>
-        <Link
-                href="https://github.com/krakowiak"
-                icon="fa-brands fa-github"
-                title="GitHub"
-        >
+        <Link href="https://github.com/krakowiak" icon="fa-brands fa-github" title="GitHub">
             GitHub
         </Link>
-        <Link
-                href="https://www.filmweb.pl/user/kjkrakowiak"
-                icon="fa-kit fa-filmweb"
-                title="Filmweb"
-        >
+        <Link href="https://www.filmweb.pl/user/kjkrakowiak" icon="fa-kit fa-filmweb" title="Filmweb">
             Filmweb
         </Link>
     </Section>
-
-    <footer class="text-center">
-        <a
-                href="https://karolkrakowiak.pl/?ref=karol.id"
-                target="_blank"
-                class="text-sm text-slate-900 dark:text-white hover:text-brand transition-colors"
-        >
-            <i class="fa-kit fa-karolkrakowiak fa-xl" title="Karol Krakowiak"></i>
-        </a>
-    </footer>
-</main>
-</body>
-</html>
+</Main>
