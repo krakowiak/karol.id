@@ -25,7 +25,7 @@ const {lang} = Astro.props;
     <meta name="twitter:description" content="Karol Krakowiak – Product Designer & Web Developer"/>
     <meta name="twitter:image" content="https://karol.id/images/preview.jpg"/>
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=figtree:400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5e31d3fb3d.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js" id="pirschextendedjs"
             data-code="CvrEJEoyRIS1AbrakL300q15J6usWNo9"></script>
@@ -34,7 +34,7 @@ const {lang} = Astro.props;
 <main class="max-w-xl mx-auto px-4 py-10 grid grid-cols-1 gap-10">
     <header class="space-y-4">
         <figure>
-            <Image src={ProfileImage} alt="Karol Krakowiak" width={128} height={128} densities={[2, 3]} class="rounded-full mx-auto w-32 h-32 shadow-md shadow-slate-200 dark:shadow-slate-700"/>
+            <Image src={ProfileImage} alt="Karol Krakowiak" width={128} height={128} densities={[2, 3]} loading="eager" class="rounded-full mx-auto w-32 h-32 shadow-md shadow-slate-200 dark:shadow-slate-700"/>
         </figure>
         <div class="font-heading text-center">
             <h1 class="text-3xl lg:text-5xl font-extrabold">Karol Krakowiak</h1>
