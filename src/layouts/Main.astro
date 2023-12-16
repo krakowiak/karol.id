@@ -48,8 +48,9 @@ const {lang} = Astro.props;
 
     <footer class="text-center">
         <a href="https://karolkrakowiak.pl/?ref=karol.id" target="_blank"
-           class="text-sm text-slate-900 dark:text-white hover:text-brand transition-colors">
-            <i class="fa-kit fa-karolkrakowiak fa-xl" title="Karol Krakowiak"></i>
+           class="text-sm text-slate-900 dark:text-white group relative flex justify-center">
+            <i class="fa-kit fa-karolkrakowiak fa-xl block group-hover:hidden absolute" title="Karol Krakowiak"></i>
+            <i class="fa-kit fa-panda fa-xl scale-125 transform hidden group-hover:block absolute" title="Karol Krakowiak"></i>
         </a>
     </footer>
 </main>
