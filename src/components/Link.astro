@@ -8,7 +8,7 @@ const {icon, ...props} = Astro.props;
         <span class={`${icon} fa-fw fa-lg`} title={props.title} aria-hidden="true"></span>
         <span class="sr-only">{props.title}</span>
     </span>
-    <span class="text-ellipsis whitespace-nowrap overflow-hidden flex-1 min-[360px]:text-center min-[360px]:-ml-7">
+    <span class="text-ellipsis whitespace-nowrap overflow-hidden flex-1 xs:text-center xs:-ml-7">
         <slot/>
     </span>
 </a>
