@@ -5,7 +5,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Figtree', 'sans-serif'],
-                heading: ['CabinetGrotesk-Variable', 'sans-serif'],
+                heading: ['Bricolage Grotesque', 'sans-serif'],
             },
             colors: {
                 'brand': '#1F01B9',

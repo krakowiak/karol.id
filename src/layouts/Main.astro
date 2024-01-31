@@ -1,7 +1,6 @@
 ---
 import {Image} from "astro:assets";
 import ProfileImage from '../images/karol_24.jpg';
-import "../styles/fonts.css";
 import "../styles/general.css";
 const {lang, url} = Astro.props;
 ---
@@ -24,8 +23,10 @@ const {lang, url} = Astro.props;
     <meta name="twitter:title" content="Karol Krakowiak"/>
     <meta name="twitter:description" content="Karol Krakowiak – Product Designer & Web Developer"/>
     <meta name="twitter:image" content="https://karol.id/images/preview.jpg"/>
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&family=Figtree:wght@400;500&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/5e31d3fb3d.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js" id="pirschextendedjs"
             data-code="CvrEJEoyRIS1AbrakL300q15J6usWNo9"></script>
